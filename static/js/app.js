@@ -1,5 +1,3 @@
-var afterJQ = [];
-
 // import the data from data.js
 const tableData = data;
 // Reference the HTML table using d3
@@ -24,7 +22,7 @@ var filters = {};
 function updateFilters() {
 
   let filterElement = d3.select(this);
-}  
+ 
   let filterValue = filterElement.property("value");
   console.log(filterValue);
   
@@ -34,20 +32,26 @@ function updateFilters() {
   if (filterValue) {
     filters[filterId] = filterValue;
   }
-  else{filters={};
+  else{
+    delete filters[filterId];
 
 };
 
 filterTable(filters);
+};
 
-function filterTable(obj) {
-  let filterData = tableData;
+function filterTable() {
+  let filterdData = tableData;
 
 
-Object.entries(obj).forEach(([key,val])=> {
-  filterData = filterData.filter((row)=> row[key]==val)
+  Object.keys(filters).forEach((key) => {
+    let userInput = d3.select("#"+key).property("value");
+    if (userInput){
+      filterdData = filterdData.filter(row => row[key] === userInput)};
 
-});
+
+  });
+
 
 buildTable(filteredData)
 };
