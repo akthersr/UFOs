@@ -20,25 +20,25 @@ The main purpose of this project is to create a dynamic webpage using JavaScript
 
 -The webpage UFO sightings has been created and filtering can be done by users search criteria on Date,City,State,Country and Shape. The below image shows us the webpage without filters:
 
-![]()
+![](https://github.com/akthersr/UFOs/blob/main/Resources/no%20filter.png)
 
 
 -User can filter the table by one or all of the search criteria.If user input a specific state or city the table will show the UFO sightings recorded for that specific city or state. The below image shows,if user filter the table by state "CA" only:
 
-![]()
+![](https://github.com/akthersr/UFOs/blob/main/Resources/ca.png)
 
 -The below image shows if the user uses all the search criteria:
 
-![]()
+![](https://github.com/akthersr/UFOs/blob/main/Resources/all.png)
 
 
-##Summary
+## Summary
 
-###Drawback
+### Drawback
 
 -The major drawback of this webpage is filtering can be done only for certain criteria like the given city,state,date and shape. If user input any other city, which is not listed, it returns an empty table.
 
-###Recommendations
+### Recommendations
 
 -There should be a search criteria where user can input specific range of date UFO sightings has been reported.
 
