@@ -25,7 +25,7 @@ function updateFilters() {
 
   let filterElement = d3.select(this);
 }  
-  let filterValue = filterElement.property("vlaue");
+  let filterValue = filterElement.property("value");
   console.log(filterValue);
   
   let filterId = filterElement.attr("id");
