@@ -11,9 +11,13 @@ The main purpose of this project is to create a dynamic webpage using JavaScript
 ## Resources
 
 -VSCode
+
 -JavaScript
+
 -CSS
+
 -HTML
+
 -Bootstrap
 
 ## Results
